@@ -1,4 +1,2 @@
 # nonames_dev
-# ne_spit'sya_project 123
-# 888
-# 313
+# ne_spit'sya_project
