@@ -3,7 +3,7 @@ const eslint = require("@eslint/js");
 const tseslint = require("typescript-eslint");
 const angular = require("angular-eslint");
 const typescriptEslint = require("@typescript-eslint/eslint-plugin");
-const jsdoc = require("eslint-plugin-jsdoc").default;
+const jsdoc = require("eslint-plugin-jsdoc");
 const angularEslintPlugin = require("@angular-eslint/eslint-plugin");
 const unusedImports = require("eslint-plugin-unused-imports");
 const filenameRules = require("eslint-plugin-filename-rules");
@@ -20,7 +20,8 @@ module.exports = tseslint.config(
     plugins: {
       // Explicitly define plugins to avoid duplication
       "@typescript-eslint": tseslint.plugin,
-      'jsdoc': jsdoc,
+      // @ts-ignore
+      jsdoc,
       '@angular-eslint': angularEslintPlugin,
       'unused-imports': unusedImports,
       'filename-rules': filenameRules,
