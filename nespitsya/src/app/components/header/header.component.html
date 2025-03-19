@@ -3,10 +3,20 @@
     <img class="logo" src="logo.svg" alt="logo">
     <div class="header-nav">
       <app-tui-input-search></app-tui-input-search>
-      <app-tui-button></app-tui-button>
     </div>
-    <app-tui-button></app-tui-button>
+    <button class="header-login-button"
+    appearance="accent"
+    size="m"
+    tuiButton
+    type="button">
+    <tui-icon
+        icon="@tui.user"
+        [style.height.rem]="2"
+    />
+      ВОЙТИ
+    </button>
+
   </div>
-  
+
 
 </div>
