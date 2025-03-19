@@ -1,3 +1,16 @@
-body {
+:root {
     font-family: 'Space Grotesk', sans-serif;
+
+    --tui-font-text-s: 'Space Grotesk, sans-serif';
+    --tui-font-text-m: 'Space Grotesk, sans-serif';
+    --tui-font-text-l: 'Space Grotesk, sans-serif';
+    --tui-font-text-xl: 'Space Grotesk, sans-serif';
+    --tui-font-text-xs: 'Space Grotesk, sans-serif';
+
+    --tui-font-heading-1: 'Space Grotesk, sans-serif';
+    --tui-font-heading-2: 'Space Grotesk, sans-serif';
+    --tui-font-heading-3: 'Space Grotesk, sans-serif';
+    --tui-font-heading-4: 'Space Grotesk, sans-serif';
+    --tui-font-heading-5: 'Space Grotesk, sans-serif';
+    --tui-font-heading-6: 'Space Grotesk, sans-serif';
 }
