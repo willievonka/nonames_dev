@@ -1,0 +1,30 @@
+div[header] .header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Равномерное распределение элементов */
+  padding: 10px 20px;
+}
+
+div[header] .logo {
+  /* Стили для логотипа */
+  width: 50px; /* Задайте ширину логотипа */
+  height: auto;
+}
+
+div[header] .header-nav {
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+
+}
+
+div[header] .header-nav app-tui-input-search {
+  width: 320px;
+  height: 44;
+  margin-right: 10px; /* Отступ справа от поля поиска */
+}
+
+div[header] .header-nav app-tui-button {
+  margin-right: 10px; /* Отступ справа от кнопки */
+}
+
