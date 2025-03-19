@@ -1,10 +1,10 @@
-<div header>
-  <div leftPartOfHeader>
-    <img class="logo" src="logo.svg" alt="logo">
-    <div class="header-nav">
-      <app-tui-input-search></app-tui-input-search>
-      <app-tui-flat-button [buttonIconLeft]="flatButtonIconLeft" [buttonIconRight]="flatButtonIconRight"></app-tui-flat-button>
+<div class="header">
+  <div class="header__left-part">
+    <img class="header__logo" src="logo.svg" alt="logo">
+    <div class="header__nav">
+      <app-tui-input-search class="header__input-search"></app-tui-input-search>
+      <app-tui-flat-button class="header__flat-button" [buttonIconLeft]="flatButtonIconLeft" [buttonIconRight]="flatButtonIconRight"></app-tui-flat-button>
     </div>
   </div>
-    <app-tui-accent-button [buttonIcon]="loginButtonIcon" [buttonText]="loginButtonText"></app-tui-accent-button>
+  <app-tui-accent-button class="header__accent-button" [buttonIcon]="loginButtonIcon" [buttonText]="loginButtonText"></app-tui-accent-button>
 </div>
