@@ -3,18 +3,9 @@
     <img class="logo" src="logo.svg" alt="logo">
     <div class="header-nav">
       <app-tui-input-search></app-tui-input-search>
+
     </div>
-    <button class="header-login-button"
-    appearance="accent"
-    size="m"
-    tuiButton
-    type="button">
-    <tui-icon
-        icon="@tui.user"
-        [style.height.rem]="2"
-    />
-      ВОЙТИ
-    </button>
+    <app-tui-accent-button [buttonIcon]="loginButtonIcon" [buttonText]="loginButtonText"></app-tui-accent-button>
 
   </div>
 

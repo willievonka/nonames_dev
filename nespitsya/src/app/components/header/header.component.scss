@@ -1,14 +1,16 @@
 div[header] .header-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Равномерное распределение элементов */
+  justify-content: space-between;
+  /* Равномерное распределение элементов */
   padding: 4px 20px;
   background-color: rgb(12, 12, 12);
 }
 
 div[header] .logo {
   /* Стили для логотипа */
-  width: 50px; /* Ширина логотипа */
+  width: 50px;
+  /* Ширина логотипа */
   height: auto;
 }
 
@@ -21,16 +23,12 @@ div[header] .header-nav {
 div[header] .header-nav app-tui-input-search {
   width: 320px;
   height: 44;
-  margin-right: 4px; /* Отступ справа от поля поиска */
+  margin-right: 4px;
+  /* Отступ справа от поля поиска */
 }
 
 div[header] .header-nav app-tui-button {
-  margin-right: 4px; /* Отступ справа от кнопки */
+  margin-right: 4px;
+  /* Отступ справа от кнопки */
 
-}
-
-.header-login-button{
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(255, 101, 0, 1);
-  -moz-box-shadow: 0px 4px 4px 0px rgba(255, 101, 0, 1);
-  box-shadow: 0px 4px 4px 0px rgba(255, 101, 0, 1);
 }

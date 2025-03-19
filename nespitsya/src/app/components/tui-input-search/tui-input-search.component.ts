@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TuiInputSearch } from '@taiga-ui/layout';
 import { TuiTextfield } from '@taiga-ui/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
     selector: 'app-tui-input-search',
-    imports: [TuiTextfield, TuiInputSearch, FormsModule],
+    imports: [TuiTextfield, TuiInputSearch, FormsModule, ReactiveFormsModule],
     templateUrl: './tui-input-search.component.html',
     styleUrl: './tui-input-search.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
