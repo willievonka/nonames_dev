@@ -13,7 +13,6 @@ import { TuiChipComponent } from '../tui-chip/tui-chip.component';
         DatePipe,
         TuiCardLarge,
         TuiAppearance,
-        TuiTitle,
         TuiChipComponent,
     ],
     templateUrl: './tui-event-card.component.html',

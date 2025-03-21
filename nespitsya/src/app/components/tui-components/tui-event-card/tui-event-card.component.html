@@ -1,21 +1,23 @@
-<div 
+<div
     class="tui-event-card"
     tuiAppearance="floating"
     tuiCardLarge="normal"
 >
     <header tuiHeader>
-        <img [src]="eventImage" [alt]="eventTitle" />
-        <h2 tuiTitle>
-            {{ eventTitle }}
-            {{ eventPlace }}
-        </h2>
+        <img class="image" [src]="eventImage" [alt]="eventTitle" />
+        <div class="tui-name">
+            <h4 class="tui-title">{{ eventTitle }}</h4>
+            <h4 class="tui-place">{{ eventPlace }}</h4>
+        </div>
     </header>
-    <main>
-        <div class="event-date">
+    <main class="date-price">
+        <h4 class="event-date">
             <!-- TODO: Вывести дату события в формате "Ср, 12 Марта | 12:00" -->
             {{ eventDate | date:'EEEE, d MMMM | HH:mm' }}
-        </div>
+        </h4>
+        <h4>
         {{ eventPrice }}
+        </h4>
     </main>
     <footer>
         <div class="event-tags">
