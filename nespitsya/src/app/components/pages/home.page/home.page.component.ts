@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TuiTitle } from '@taiga-ui/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { TuiEventCardComponent } from '../../tui-components/tui-event-card/tui-event-card.component';
 import { TuiSecondaryButtonComponent } from '../../tui-components/tui-secondary-button/tui-secondary-button.component';
@@ -8,7 +7,6 @@ import { TuiSecondaryButtonComponent } from '../../tui-components/tui-secondary-
 @Component({
     selector: 'app-home-page',
     imports: [
-        TuiTitle,
         TuiBreadcrumbsComponent,
         TuiEventCardComponent,
         TuiSecondaryButtonComponent,
