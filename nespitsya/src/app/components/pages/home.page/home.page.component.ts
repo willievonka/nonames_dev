@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TuiTitle } from '@taiga-ui/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { TuiEventCardComponent } from '../../tui-components/tui-event-card/tui-event-card.component';
+import { TuiSecondaryButtonComponent } from '../../tui-components/tui-secondary-button/tui-secondary-button.component';
 
 
 @Component({
@@ -10,6 +11,7 @@ import { TuiEventCardComponent } from '../../tui-components/tui-event-card/tui-e
         TuiTitle,
         TuiBreadcrumbsComponent,
         TuiEventCardComponent,
+        TuiSecondaryButtonComponent,
     ],
     templateUrl: './home.page.component.html',
     styleUrl: './home.page.component.scss',
@@ -17,4 +19,7 @@ import { TuiEventCardComponent } from '../../tui-components/tui-event-card/tui-e
 })
 export class HomePageComponent {
     public cityLocation: string = 'Екатеринбурге';
+
+    public moreEventsButtonText: string = `Больше событий в ${this.cityLocation}`;
+    public moreEventsButtonIcon: string = '@tui.corner-down-right';
 }
