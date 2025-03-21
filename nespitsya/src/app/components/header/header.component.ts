@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TuiInputSearchComponent } from '../tui-input-search/tui-input-search.component';
-import { TuiAccentButtonComponent } from '../tui-accent-button/tui-accent-button.component';
-import { TuiFlatButtonComponent } from '../tui-flat-button/tui-flat-button.component';
+import { TuiInputSearchComponent } from '../tui-components/tui-input-search/tui-input-search.component';
+import { TuiAccentButtonComponent } from '../tui-components/tui-accent-button/tui-accent-button.component';
+import { TuiFlatButtonComponent } from '../tui-components/tui-flat-button/tui-flat-button.component';
 
 @Component({
     selector: 'app-header',
