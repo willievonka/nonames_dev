@@ -1,52 +1,52 @@
-.tui-event-card {
+.event-card {
   background-color: transparent;
   width: 310px;
-  display: flex;
-  padding: 5px 7px;
-}
+  padding: 5px 7px !important;
+  
 
-.image {
-  width: 296px;
-  height: auto;
-  border-radius: 10px;
-}
+  &__image {
+    width: 296px;
+    height: auto;
+    border-radius: 10px;
+  }
 
-.tui-name {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
+  &__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 
-.tui-title {
-  margin-top: auto;
-  margin-bottom: auto;
-}
+  &__title {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
-.tui-place {
-  margin-top: auto;
-  margin-bottom: auto;
-  color: rgba($color: #ffffff, $alpha: 0.6);
-}
+  &__place {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgba($color: #ffffff, $alpha: 0.6);
+  }
 
-.date-price {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  &__date-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.event-date {
-  color: rgba($color: #E38163, $alpha: 1);
-}
+  &__date {
+    color: rgba($color: #E38163, $alpha: 1);
+  }
 
-.event-tags {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 10px;
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 h4 {
