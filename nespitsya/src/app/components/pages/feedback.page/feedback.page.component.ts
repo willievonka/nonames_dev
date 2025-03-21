@@ -15,6 +15,6 @@ import { TuiAccentButtonComponent } from '../../tui-components/tui-accent-button
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FeedbackPageComponent {
-  public sendButtonIcon: string = '@tui.mail';
-  public sendButtonText: string = 'Отправить';
+    public sendButtonIcon: string = '@tui.mail';
+    public sendButtonText: string = 'Отправить';
 }
