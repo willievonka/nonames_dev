@@ -3,10 +3,19 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './components/pages/home.page/home.page.component';
+import { FeedbackPageComponent } from './components/pages/feedback.page/feedback.page.component';
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, TuiRoot, HeaderComponent, FooterComponent],
+    imports: [
+        RouterOutlet,
+        TuiRoot,
+        HeaderComponent,
+        FooterComponent,
+        HomePageComponent,
+        FeedbackPageComponent,
+    ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
