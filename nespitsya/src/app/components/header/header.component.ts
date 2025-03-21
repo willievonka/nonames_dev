@@ -5,7 +5,11 @@ import { TuiFlatButtonComponent } from '../tui-flat-button/tui-flat-button.compo
 
 @Component({
     selector: 'app-header',
-    imports: [TuiInputSearchComponent, TuiAccentButtonComponent, TuiFlatButtonComponent],
+    imports: [
+        TuiInputSearchComponent, 
+        TuiAccentButtonComponent, 
+        TuiFlatButtonComponent,
+    ],
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,

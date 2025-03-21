@@ -6,7 +6,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-tui-input-search',
-    imports: [TuiTextfield, TuiInputSearch, FormsModule, ReactiveFormsModule],
+    imports: [
+        TuiTextfield, 
+        TuiInputSearch, 
+        FormsModule, 
+        ReactiveFormsModule,
+    ],
     templateUrl: './tui-input-search.component.html',
     styleUrl: './tui-input-search.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
