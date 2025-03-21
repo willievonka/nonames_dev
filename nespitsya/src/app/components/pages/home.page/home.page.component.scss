@@ -1,0 +1,22 @@
+.page-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 13px 0;
+    font-size: 52px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.title__city-location {
+    display: flex;
+    margin-top: 10px;
+}
+
+.more-events-button {
+    margin: 0 auto;
+}
