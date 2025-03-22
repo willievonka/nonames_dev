@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule,Validators } from '@angular/forms';
 import { TuiInputModule,TuiTextareaModule } from '@taiga-ui/legacy';
 
 
@@ -17,6 +17,6 @@ import { TuiInputModule,TuiTextareaModule } from '@taiga-ui/legacy';
 })
 export class TuiInputTextComponent {
     public inputForm: FormGroup = new FormGroup({
-        inputValue: new FormControl('Content'),
+        text: new FormControl('',Validators.required),
     });
 }

@@ -1,9 +1,11 @@
 <form [formGroup]="inputForm">
   <tui-input
-  formControlName="testValue"
+  formControlName="email"
+  [tuiValidator]="validator"
   tuiTextfieldSize="l"
   tuiHintContent="Мы отправим ответ на ваш вопрос по почте"
   [tuiTextfieldCleaner]="true"
+
 >
   Почта для обратной связи
   <span class="tui-required"></span>
@@ -12,6 +14,8 @@
       placeholder="mail@mail.ru"
       tuiTextfieldLegacy
       type="email"
+      formControlName="email"
   />
 </tui-input>
 </form>
+ 
