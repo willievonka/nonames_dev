@@ -1,9 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TuiFlatButtonComponent } from '../tui-components/tui-flat-button/tui-flat-button.component';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
     selector: 'app-footer',
-    imports: [TuiFlatButtonComponent],
+    imports: [
+        TuiFlatButtonComponent,
+        RouterLink,
+    ],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
