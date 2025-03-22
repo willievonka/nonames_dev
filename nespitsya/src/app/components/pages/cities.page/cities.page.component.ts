@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { TuiSecondaryButtonComponent } from '../../tui-components/tui-secondary-button/tui-secondary-button.component';
 
+
 @Component({
     selector: 'app-cities-page',
     imports: [
