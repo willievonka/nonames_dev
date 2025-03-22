@@ -1,5 +1,21 @@
-<button tuiButton class="flat-button" appearance="flat" [size]="buttonSize" type="button">
-    <tui-icon *ngIf="buttonIconLeft" [icon]="buttonIconLeft" [style.height.rem]="2"></tui-icon>
+<button 
+    class="flat-button" 
+    tuiButton 
+    type="button"
+    appearance="flat" 
+    [size]="buttonSize" 
+>
+    <tui-icon 
+        *ngIf="buttonIconLeft" 
+        [icon]="buttonIconLeft" 
+        [style.height.rem]="2"
+    >
+    </tui-icon>
     <span *ngIf="buttonText">{{ buttonText }}</span>
-    <tui-icon *ngIf="buttonIconRight" [icon]="buttonIconRight" [style.height.rem]="2"></tui-icon>
+    <tui-icon 
+        *ngIf="buttonIconRight" 
+        [icon]="buttonIconRight" 
+        [style.height.rem]="2"
+        >
+    </tui-icon>
 </button>

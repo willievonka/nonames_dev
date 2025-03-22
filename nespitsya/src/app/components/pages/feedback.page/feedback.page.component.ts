@@ -19,7 +19,7 @@ import { TuiInputTextComponent } from '../../tui-components/tui-input-text/tui-i
 export class FeedbackPageComponent {
     public breadcrumbsItems: Array<{ caption: string, routerLink: string }> = [
         { caption: 'Главная', routerLink: '/home' },
-        { caption: 'Обратная связь', routerLink: '/feedback' },
+        { caption: 'Обратная связь', routerLink: '/home/feedback' },
     ];
 
     public sendButtonIcon: string = '@tui.mail';
