@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component} from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TuiInputModule,TuiTextfieldControllerModule } from '@taiga-ui/legacy';
-import {TuiHint, TuiHintComponent, TuiTextfield,TuiIcon} from '@taiga-ui/core';
-import {TuiValidator} from '@taiga-ui/cdk';
+import { TuiHint, TuiTextfield } from '@taiga-ui/core';
+import { TuiValidator } from '@taiga-ui/cdk';
 
 
 
@@ -26,5 +26,5 @@ export class TuiInputEmailComponent {
         email: new FormControl('',Validators.required),
     });
 
-    protected readonly validator = Validators.email;
+    protected readonly validator: Validators = Validators.email;
 }
