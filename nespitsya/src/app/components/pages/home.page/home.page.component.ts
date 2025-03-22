@@ -18,6 +18,10 @@ import { TuiSecondaryButtonComponent } from '../../tui-components/tui-secondary-
 export class HomePageComponent {
     public cityLocation: string = 'Екатеринбурге';
 
+    public breadcrumbsItems: Array<{ caption: string, routerLink: string }> = [
+        { caption: 'Главная', routerLink: '/home' },
+    ];
+
     public moreEventsButtonText: string = `Больше событий в ${this.cityLocation}`;
     public moreEventsButtonIcon: string = '@tui.corner-down-right';
 }

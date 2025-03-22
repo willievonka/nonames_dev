@@ -17,6 +17,11 @@ import { TuiInputTextComponent } from '../../tui-components/tui-input-text/tui-i
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FeedbackPageComponent {
+    public breadcrumbsItems: Array<{ caption: string, routerLink: string }> = [
+        { caption: 'Главная', routerLink: '/home' },
+        { caption: 'Обратная связь', routerLink: '/feedback' },
+    ];
+
     public sendButtonIcon: string = '@tui.mail';
     public sendButtonText: string = 'Отправить';
 }

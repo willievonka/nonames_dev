@@ -1,8 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TuiItem } from '@taiga-ui/cdk';
-import { TuiSizeL } from '@taiga-ui/core';
 import { TuiBreadcrumbs } from '@taiga-ui/kit';
 
 
@@ -19,10 +18,6 @@ import { TuiBreadcrumbs } from '@taiga-ui/kit';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TuiBreadcrumbsComponent {
-    public items: Array<{ caption: string, routerLink: string }> = [
-        { caption: 'Главная', routerLink: '/home' },
-        { caption: 'Обратная связь', routerLink: '/feedback' },
-    ];
-
-    public size: TuiSizeL = 'l';
+    @Input()
+    public items: Array<{ caption: string, routerLink: string }> = [];
 }
