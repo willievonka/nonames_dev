@@ -1,10 +1,16 @@
 .event-card {
   background-color: transparent;
-  width: 310px;
-  padding: 5px 7px !important;
+  width: 316px;
+  padding: 10px 10px !important;
   box-shadow: 0px 0px 0px 0px transparent;
+  border-radius: 17px !important;
+
+  &__link {
+    text-decoration: none;
+  }
 
   &__image {
+    margin-top: 3px;
     width: 296px;
     height: auto;
     border-radius: 10px;
@@ -47,6 +53,14 @@
     flex-wrap: wrap;
     gap: 10px;
   }
+}
+
+.event-card:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.event-card:active {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 h4 {

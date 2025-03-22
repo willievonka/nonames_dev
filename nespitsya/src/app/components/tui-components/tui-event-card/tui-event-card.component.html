@@ -1,27 +1,34 @@
-<div
-    class="event-card"
-    tuiAppearance="floating"
-    tuiCardLarge="normal"
+<a 
+    class="event-card__link"
+    tuiAppearance="link"
+    [routerLink]="routerLink"
 >
-    <header tuiHeader>
-        <img class="event-card__image" [src]="eventImage" [alt]="eventTitle" />
-        <div class="event-card__name">
-            <h4 class="event-card__title">{{ eventTitle }}</h4>
-            <h4 class="event-card__place">{{ eventPlace }}</h4>
-        </div>
-    </header>
-    <main class="event-card__date-price">
-        <h4 class="event-card__date">
-            <!-- TODO: Вывести дату события в формате "Ср, 12 Марта | 12:00" -->
-            {{ eventDate | date:'EE, d MMMM | HH:mm' }}
-        </h4>
-        <h4>
-        {{ eventPrice }}
-        </h4>
-    </main>
-    <footer>
-        <div class="event-card__tags">
-            <app-tui-chip class="event-card__tag" *ngFor="let tag of eventTags" [value]="tag"></app-tui-chip>
-        </div>
-    </footer>
-</div>
+    <div
+        class="event-card"
+        tuiAppearance="floating"
+        tuiCardLarge="normal"
+    >
+        <header tuiHeader>
+            <img class="event-card__image" [src]="image" [alt]="title" />
+            <div class="event-card__name">
+                <h4 class="event-card__title">{{ title }}</h4>
+                <h4 class="event-card__place">{{ place }}</h4>
+            </div>
+        </header>
+        <main class="event-card__date-price">
+            <h4 class="event-card__date">
+                <!-- TODO: Вывести дату события в формате "Ср, 12 Марта | 12:00" -->
+                {{ date | date:'EE, d MMMM | HH:mm' }}
+            </h4>
+            <h4>
+            {{ price }}
+            </h4>
+        </main>
+        <footer>
+            <div class="event-card__tags">
+                <app-tui-chip class="event-card__tag" *ngFor="let tag of tags" [value]="tag"></app-tui-chip>
+            </div>
+        </footer>
+    </div>
+
+</a>
