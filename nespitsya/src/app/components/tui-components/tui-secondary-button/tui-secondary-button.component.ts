@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { TuiButton, TuiIcon } from '@taiga-ui/core';
-
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-tui-secondary-button',
     imports: [
+        CommonModule,
         TuiButton,
         TuiIcon,
     ],
@@ -16,5 +17,7 @@ export class TuiSecondaryButtonComponent {
     @Input()
     public buttonText: string = '';
     @Input()
-    public buttonIcon: string = '';
+    public buttonIconLeft: string = '';
+    @Input()
+    public buttonIconRight: string = '';
 }

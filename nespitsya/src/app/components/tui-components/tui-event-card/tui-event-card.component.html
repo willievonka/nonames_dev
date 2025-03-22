@@ -17,8 +17,8 @@
         </header>
         <main class="event-card__date-price">
             <h4 class="event-card__date">
-                <!-- TODO: Вывести дату события в формате "Ср, 12 Марта | 12:00" -->
-                {{ date | date:'EE, d MMMM | HH:mm' }}
+                <!-- [ ] TODO: Вывести дату события в формате "Ср, 12 Марта | 12:00" -->
+                {{ date | date:'EE, d MMMM | HH:mm' : 'ru-RU' }}
             </h4>
             <h4>
             {{ price }}
