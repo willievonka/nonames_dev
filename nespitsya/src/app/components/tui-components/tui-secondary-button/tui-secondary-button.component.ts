@@ -20,4 +20,7 @@ export class TuiSecondaryButtonComponent {
     public buttonIconLeft: string = '';
     @Input()
     public buttonIconRight: string = '';
+    @Input()
+    public size: 's' | 'm' | 'l' | 'xl' | 'xs' = 's';
+
 }
