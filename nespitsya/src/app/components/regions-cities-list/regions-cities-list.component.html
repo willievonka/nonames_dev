@@ -1,0 +1,18 @@
+<div class="region-list">
+    <div class="region" *ngFor="let region of regions">
+        <h2 class="region__title">
+            {{ region.name }}
+        </h2>
+        <div class="region__cities-list">
+            <app-tui-secondary-button
+                class="cities-list__city"
+                *ngFor="let city of region.cities"
+                buttonIconLeft="@tui.building-2"
+                [buttonText]="city.name"
+                size="l"
+                [routerLink]="city.routerLink"
+            >
+            </app-tui-secondary-button>
+        </div>
+    </div>
+</div>

@@ -3,7 +3,7 @@ import { TuiInputSearch } from '@taiga-ui/layout';
 import { TuiTextfield } from '@taiga-ui/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
+//[ ] TODO: Реализовать поиск по приложению
 @Component({
     selector: 'app-tui-input-search',
     imports: [
