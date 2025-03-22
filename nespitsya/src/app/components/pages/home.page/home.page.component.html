@@ -1,12 +1,12 @@
-<div class="page-content">
+<div class="home-page">
     <app-tui-breadcrumbs [items]="breadcrumbsItems"></app-tui-breadcrumbs>
-    <h1>
+    <h1 class="home-page__title">
         Популярные<br>события в<br>
-        <span class="title__city-location">{{ cityLocation }}</span>
+        <span class="home-page__city-location">{{ cityLocation }}</span>
     </h1>
-    <div class="events-list">
+    <div class="home-page__events-list">
         <app-tui-event-card 
-            class="event-card" 
+            class="home-page__event-card"
             *ngFor="let event of events"
             [image]="event.image"
             [title]="event.title"
@@ -19,7 +19,7 @@
         </app-tui-event-card>
     </div>
     <app-tui-secondary-button
-        class="more-events-button" 
+        class="home-page__more-events-button" 
         [buttonText]="moreEventsButtonText" 
         [buttonIcon]="moreEventsButtonIcon"
     >
