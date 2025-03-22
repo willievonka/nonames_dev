@@ -13,25 +13,29 @@
   -webkit-box-shadow: 0px 4px 58.4px 0px rgba(255, 106, 0, 1);
   -moz-box-shadow: 0px 4px 58.4px 0px rgba(255, 106, 0, 1);
   box-shadow: 0px 4px 58.4px 0px rgba(255, 106, 0, 1);
-}
 
-.header__left-part {
-  display: flex;
-  align-items: center;
-  gap: 70px;
-}
+  a {
+    cursor: pointer;
+  }
 
-.header__logo {
-  width: 160px;
-  height: 40px;
-}
+  &__left-part {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-}
+  &__logo {
+    width: 160px;
+    height: 40px;
+  }
 
-.header__input-search {
-  width: 320px;
-  margin-right: 5px;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input-search {
+    width: 320px;
+    margin-right: 5px;
+  }
 }
