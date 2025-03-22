@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import { TuiAppearance } from '@taiga-ui/core';
 import { TuiCardLarge } from '@taiga-ui/layout';
@@ -21,11 +21,18 @@ import { RouterLink } from '@angular/router';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TuiEventCardComponent {
-    public image: string = 'https://i.imgur.com/5qSSGHi.jpeg';
-    public title: string = 'Оркестр CAGMO | Концерт при свечах';
-    public place: string = 'Детская филармония';
-    public date: Date = new Date ('2025-03-12T12:00:00');
-    public price: string = 'от 1500₽';
-    public tags: string[] = ['Классическая музыка', 'Саундтрек', 'Неоклассика', 'Шоу', 'Концерт'];
+    @Input()
+    public image: string = '';
+    @Input()
+    public title: string = '';
+    @Input()
+    public place: string = '';
+    @Input()
+    public date: Date = new Date ();
+    @Input()
+    public price: string = '';
+    @Input()
+    public tags: string[] = [];
+    @Input()
     public routerLink: string = '';
 }

@@ -4,12 +4,20 @@
         Популярные<br>события в<br>
         <span class="title__city-location">{{ cityLocation }}</span>
     </h1>
-    <app-tui-event-card class="event-card"></app-tui-event-card>
-    <!-- <ul class="events-list">
-        <li *ngFor="let event of events">
-            <app-tui-event-card [event]="event"></app-tui-event-card>
-        </li>
-    </ul> -->
+    <div class="events-list">
+        <app-tui-event-card 
+            class="event-card" 
+            *ngFor="let event of events"
+            [image]="event.image"
+            [title]="event.title"
+            [place]="event.place"
+            [date]="event.date"
+            [price]="event.price"
+            [tags]="event.tags"
+            [routerLink]="event.routerLink"
+        >
+        </app-tui-event-card>
+    </div>
     <app-tui-secondary-button
         class="more-events-button" 
         [buttonText]="moreEventsButtonText" 
