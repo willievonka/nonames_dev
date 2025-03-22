@@ -6,7 +6,6 @@ import { TuiSizeL } from '@taiga-ui/core';
 import { TuiBreadcrumbs } from '@taiga-ui/kit';
 
 
-
 @Component({
     selector: 'app-tui-breadcrumbs',
     imports: [
@@ -20,12 +19,10 @@ import { TuiBreadcrumbs } from '@taiga-ui/kit';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TuiBreadcrumbsComponent {
-    public size: TuiSizeL = 'l';
-    public items: [{caption: string, routerLink: string}] = [
-        {
-            caption: 'Главная',
-            routerLink: '',
-        },
-      
+    public items: Array<{ caption: string, routerLink: string }> = [
+        { caption: 'Главная', routerLink: '/home' },
+        { caption: 'Обратная связь', routerLink: '/feedback' },
     ];
+
+    public size: TuiSizeL = 'l';
 }
