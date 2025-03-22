@@ -1,6 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component} from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { TuiInputModule } from '@taiga-ui/legacy';
+import { TuiInputModule,TuiTextfieldControllerModule } from '@taiga-ui/legacy';
+import {TuiHint, TuiHintComponent, TuiTextfield,TuiIcon} from '@taiga-ui/core';
+
 
 
 @Component({
@@ -8,6 +10,9 @@ import { TuiInputModule } from '@taiga-ui/legacy';
     imports: [
         ReactiveFormsModule,
         TuiInputModule,
+        TuiTextfield,
+        TuiTextfieldControllerModule,
+        TuiHint,
     ],
     templateUrl: './tui-input-email.component.html',
     styleUrl: './tui-input-email.component.scss',

@@ -1,6 +1,11 @@
 <form [formGroup]="inputForm">
-    <tui-input formControlName="inputValue">
-        Type a text
-        <input tuiTextfieldLegacy />
-    </tui-input>
-</form>
+<tui-textarea
+    tuiTextfieldSize="l"
+    formControlName="testValue1"
+    class="field-medium"
+    [expandable]="true"
+    [maxLength]="500"
+    [rows]="10"
+>
+    Ваш отзыв/вопрос
+</tui-textarea>
