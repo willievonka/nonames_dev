@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { RegionsCitiesListComponent } from '../../regions-cities-list/regions-cities-list.component';
 import { IRegion } from '../../regions-cities-list/regions-cities-list.interface';
+import { TuiTabsComponent } from '../../tui-components/tui-tabs/tui-tabs.component';
 
 @Component({
     selector: 'app-cities-page',
@@ -10,6 +11,7 @@ import { IRegion } from '../../regions-cities-list/regions-cities-list.interface
         CommonModule,
         TuiBreadcrumbsComponent,
         RegionsCitiesListComponent,
+        TuiTabsComponent,
     ],
     templateUrl: './cities.page.component.html',
     styleUrl: './cities.page.component.scss',
@@ -22,29 +24,29 @@ export class CitiesPageComponent {
     ];
 
     public regions: IRegion[] = [
-        { 
-            name: 'Московская область', 
-            cities: [ 
-                { name: 'Красногорск', routerLink: '' }, 
-                { name: 'Химки', routerLink: '' }, 
-                { name: 'Зеленоград', routerLink: '' } 
-            ] 
+        {
+            name: 'Московская область',
+            cities: [
+                { name: 'Красногорск', routerLink: '' },
+                { name: 'Химки', routerLink: '' },
+                { name: 'Зеленоград', routerLink: '' }
+            ]
         },
-        { 
-            name: 'Ленинградская область', 
-            cities: [ 
-                { name: 'Пушкин', routerLink: '' }, 
-                { name: 'Петергоф', routerLink: '' } 
-            ] 
+        {
+            name: 'Ленинградская область',
+            cities: [
+                { name: 'Пушкин', routerLink: '' },
+                { name: 'Петергоф', routerLink: '' }
+            ]
         },
-        { 
-            name: 'Cвердловская область', 
-            cities: [ 
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' }, 
-                { name: 'Ревда', routerLink: '' }, 
-                { name: 'Первоуральск', routerLink: '' }, 
-                { name: 'Верхняя Пышма', routerLink: '' } 
-            ] 
+        {
+            name: 'Cвердловская область',
+            cities: [
+                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
+                { name: 'Ревда', routerLink: '' },
+                { name: 'Первоуральск', routerLink: '' },
+                { name: 'Верхняя Пышма', routerLink: '' }
+            ]
         },
     ];
 }

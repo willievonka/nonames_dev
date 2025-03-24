@@ -1,5 +1,11 @@
 .cities-page {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
   flex-direction: column;
   padding: 0 50px;
   box-sizing: border-box;
