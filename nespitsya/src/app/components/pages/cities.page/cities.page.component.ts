@@ -23,8 +23,6 @@ export class CitiesPageComponent {
         { caption: 'Города', routerLink:'/home/cities' }
     ];
 
-    public readonly regionsTabs: string[] = ['А', 'Б', 'В', 'Д', 'Е', 'З', 'И', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Х', 'Ч', 'Я'];
-
     public regionsList: IRegionsList[] = [
         {
             category: 'М',
@@ -98,4 +96,6 @@ export class CitiesPageComponent {
             ]
         },
     ];
+
+    public readonly regionsTabs: string[] = this.regionsList.map((category: IRegionsList) => category.category);
 }

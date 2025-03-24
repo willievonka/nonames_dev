@@ -5,6 +5,7 @@
   margin-left: 2rem;
   min-inline-size: 10rem;
   inline-size: 10rem;
-  height: 61vh;
+  height: fit-content;
+  max-height: 61vh;
   font-size: 18px;
 }
