@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { TuiSecondaryButtonComponent } from '../tui-components/tui-secondary-button/tui-secondary-button.component';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { IRegion } from './regions-cities-list.interface';
+import * as regionsCitiesListInterface from './regions-cities-list.interface';
 
 @Component({
     selector: 'app-regions-cities-list',
@@ -15,7 +15,7 @@ import { IRegion } from './regions-cities-list.interface';
     styleUrl: './regions-cities-list.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RegionsCitiesListComponent {
+export class RegionsCitiesListComponent implements regionsCitiesListInterface.IRegionsCitiesList {
     @Input()
-    public regions: IRegion[] = [];
+    public regions: regionsCitiesListInterface.IRegion[] = [];
 }

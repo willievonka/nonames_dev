@@ -4,6 +4,7 @@ import { TuiAppearance } from '@taiga-ui/core';
 import { TuiCardLarge } from '@taiga-ui/layout';
 import { TuiChipComponent } from '../tui-chip/tui-chip.component';
 import { RouterLink } from '@angular/router';
+import { IEventCard } from './tui-event-card.interface';
 
 
 @Component({
@@ -20,7 +21,7 @@ import { RouterLink } from '@angular/router';
     styleUrl: './tui-event-card.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TuiEventCardComponent {
+export class TuiEventCardComponent implements IEventCard {
     @Input()
     public image: string = '';
     @Input()

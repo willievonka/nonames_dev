@@ -8,3 +8,7 @@ export interface IRegion {
     cities: ICity[];
 }
 
+export interface IRegionsCitiesList {
+    regions: IRegion[];
+}
+
