@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { TuiTabs } from '@taiga-ui/kit';
 import { CommonModule } from '@angular/common';
 
@@ -14,5 +14,9 @@ import { CommonModule } from '@angular/common';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TuiTabsComponent {
+    @Input()
+    public tabs: string[] = [];
+    
     public activeItemIndex: number = 0;
+    
 }
