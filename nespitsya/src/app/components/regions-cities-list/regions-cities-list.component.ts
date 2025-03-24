@@ -17,5 +17,5 @@ import * as regionsCitiesListInterface from './regions-cities-list.interface';
 })
 export class RegionsCitiesListComponent implements regionsCitiesListInterface.IRegionsCitiesList {
     @Input()
-    public groups: regionsCitiesListInterface.IRegionsList[] = [];
+    public groups: regionsCitiesListInterface.IRegionsGroup[] = [];
 }

@@ -1,8 +1,8 @@
 export interface IRegionsCitiesList {
-    groups: IRegionsList[];
+    groups: IRegionsGroup[];
 }
 
-export interface IRegionsList {
+export interface IRegionsGroup {
     name: string;
     regions: IRegion[];
 }
@@ -16,4 +16,3 @@ export interface ICity {
     name: string;
     routerLink: string;
 }
-
