@@ -25,7 +25,7 @@ export class CitiesPageComponent {
 
     public regionsList: IRegionsList[] = [
         {
-            category: 'М',
+            name: 'М',
             regions: [
                 {
                     name: 'Московская область',
@@ -70,7 +70,7 @@ export class CitiesPageComponent {
             ]
         },
         {
-            category: 'Л',
+            name: 'Л',
             regions: [
                 {
                     name: 'Ленинградская область',
@@ -82,7 +82,7 @@ export class CitiesPageComponent {
             ]
         },
         {
-            category: 'С',
+            name: 'С',
             regions: [
                 {
                     name: 'Cвердловская область',
@@ -97,5 +97,5 @@ export class CitiesPageComponent {
         },
     ];
 
-    public readonly regionsTabs: string[] = this.regionsList.map((category: IRegionsList) => category.category);
+    public readonly regionsTabs: string[] = this.regionsList.map((name: IRegionsList) => name.name);
 }

@@ -1,9 +1,9 @@
 export interface IRegionsCitiesList {
-    categories: IRegionsList[];
+    groups: IRegionsList[];
 }
 
 export interface IRegionsList {
-    category: string;
+    name: string;
     regions: IRegion[];
 }
 
