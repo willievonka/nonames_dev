@@ -1,9 +1,13 @@
 .region-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 13px;
 }
 
+.category__title {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+}
 
 .region {
 
@@ -20,5 +24,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        margin-bottom: 26px;
     }
 }
+

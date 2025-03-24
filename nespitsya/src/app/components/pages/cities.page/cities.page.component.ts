@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { RegionsCitiesListComponent } from '../../regions-cities-list/regions-cities-list.component';
-import { IRegion } from '../../regions-cities-list/regions-cities-list.interface';
+import { IRegionsList } from '../../regions-cities-list/regions-cities-list.interface';
 import { TuiTabsComponent } from '../../tui-components/tui-tabs/tui-tabs.component';
 
 @Component({
@@ -25,110 +25,76 @@ export class CitiesPageComponent {
 
     public readonly regionsTabs: string[] = ['А', 'Б', 'В', 'Д', 'Е', 'З', 'И', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Х', 'Ч', 'Я'];
 
-    public regions: IRegion[] = [
+    public regionsList: IRegionsList[] = [
         {
-            name: 'Московская область',
-            cities: [
-                { name: 'Красногорск', routerLink: '' },
-                { name: 'Химки', routerLink: '' },
-                { name: 'Зеленоград', routerLink: '' }
+            category: 'М',
+            regions: [
+                {
+                    name: 'Московская область',
+                    cities: [
+                        { name: 'Красногорск', routerLink: '' },
+                        { name: 'Химки', routerLink: '' },
+                        { name: 'Зеленоград', routerLink: '' }
+                    ]
+                },
+                {
+                    name: 'Московская область',
+                    cities: [
+                        { name: 'Красногорск', routerLink: '' },
+                        { name: 'Химки', routerLink: '' },
+                        { name: 'Зеленоград', routerLink: '' }
+                    ]
+                },
+                {
+                    name: 'Московская область',
+                    cities: [
+                        { name: 'Красногорск', routerLink: '' },
+                        { name: 'Химки', routerLink: '' },
+                        { name: 'Зеленоград', routerLink: '' }
+                    ]
+                },
+                {
+                    name: 'Московская область',
+                    cities: [
+                        { name: 'Красногорск', routerLink: '' },
+                        { name: 'Химки', routerLink: '' },
+                        { name: 'Зеленоград', routerLink: '' }
+                    ]
+                },
+                {
+                    name: 'Московская область',
+                    cities: [
+                        { name: 'Красногорск', routerLink: '' },
+                        { name: 'Химки', routerLink: '' },
+                        { name: 'Зеленоград', routerLink: '' }
+                    ]
+                },
             ]
         },
         {
-            name: 'Ленинградская область',
-            cities: [
-                { name: 'Пушкин', routerLink: '' },
-                { name: 'Петергоф', routerLink: '' }
+            category: 'Л',
+            regions: [
+                {
+                    name: 'Ленинградская область',
+                    cities: [
+                        { name: 'Пушкин', routerLink: '' },
+                        { name: 'Петергоф', routerLink: '' }
+                    ]
+                },
             ]
         },
         {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
-            ]
-        },
-        {
-            name: 'Cвердловская область',
-            cities: [
-                { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                { name: 'Ревда', routerLink: '' },
-                { name: 'Первоуральск', routerLink: '' },
-                { name: 'Верхняя Пышма', routerLink: '' }
+            category: 'С',
+            regions: [
+                {
+                    name: 'Cвердловская область',
+                    cities: [
+                        { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
+                        { name: 'Ревда', routerLink: '' },
+                        { name: 'Первоуральск', routerLink: '' },
+                        { name: 'Верхняя Пышма', routerLink: '' }
+                    ]
+                },
             ]
         },
     ];
