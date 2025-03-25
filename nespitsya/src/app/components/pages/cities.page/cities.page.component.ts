@@ -4,6 +4,7 @@ import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tu
 import { RegionsCitiesListComponent } from '../../regions-cities-list/regions-cities-list.component';
 import { IRegionsGroup } from '../../regions-cities-list/regions-cities-list.interface';
 import { TuiTabsComponent } from '../../tui-components/tui-tabs/tui-tabs.component';
+import { ActivePanelService } from '../../../services/active-panel-service';
 
 @Component({
     selector: 'app-cities-page',
@@ -12,6 +13,9 @@ import { TuiTabsComponent } from '../../tui-components/tui-tabs/tui-tabs.compone
         TuiBreadcrumbsComponent,
         RegionsCitiesListComponent,
         TuiTabsComponent,
+    ],
+    providers: [
+        ActivePanelService,
     ],
     templateUrl: './cities.page.component.html',
     styleUrl: './cities.page.component.scss',

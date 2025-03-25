@@ -1,6 +1,6 @@
 <div class="region-list">
     <div class="region-list__group" *ngFor="let group of groups">
-        <h2 class="group__title">{{ group.name }}</h2>
+        <h2 class="group__title" #name>{{ group.name }}</h2>
         <div class="region" *ngFor="let region of group.regions">
             <h3 class="region__title">
                 {{ region.name }}

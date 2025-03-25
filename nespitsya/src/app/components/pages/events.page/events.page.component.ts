@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute, Params } from '@angular/router';
 
 
 @Component({
@@ -25,4 +26,12 @@ export class EventsPageComponent {
 
     public searchResultsCount: number = 0;
 
+    public activatedRoute: ActivatedRoute = inject(ActivatedRoute);
+
+    constructor() {
+        this.activatedRoute.params.subscribe((params: Params) => {
+            const idParam: string = params['id'] as string;
+            console.log(idParam);
+        });
+    }
 }
