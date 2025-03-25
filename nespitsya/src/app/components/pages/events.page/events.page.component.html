@@ -1,1 +1,27 @@
-<p>events.page works!</p>
+<div class="events-page">
+    <app-tui-breadcrumbs [items]="breadcrumbsItems"></app-tui-breadcrumbs>
+    <h1 class="events-page__title">
+        События в<br>
+        <span class="events-page__city-location">{{ cityLocation + 'е' }}</span>
+    </h1>
+    <div class="events-page__search-results" [ngPlural]="searchResultsCount">
+        <ng-template ngPluralCase="=0">Нет результатов</ng-template>
+        <ng-template ngPluralCase="one">{{ searchResultsCount }} результат</ng-template>
+        <ng-template ngPluralCase="few">{{ searchResultsCount }} результата</ng-template>
+        <ng-template ngPluralCase="many">{{ searchResultsCount }} результатов</ng-template>
+    </div>
+    <!-- <div class="events-page__events-list">
+        <app-tui-event-card 
+            class="events-page__event-card"
+            *ngFor="let event of events"
+            [image]="event.image"
+            [title]="event.title"
+            [place]="event.place"
+            [date]="event.date"
+            [price]="event.price"
+            [tags]="event.tags"
+            [routerLink]="event.routerLink"
+        >
+        </app-tui-event-card>
+    </div> -->
+</div>
