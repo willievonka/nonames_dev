@@ -7,7 +7,6 @@ import { registerLocaleData } from '@angular/common';
 import localeRu from '@angular/common/locales/ru';
 
 
-
 export const appConfig: ApplicationConfig = {
     providers: [
         provideAnimations(), 
