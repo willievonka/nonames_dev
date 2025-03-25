@@ -26,7 +26,7 @@ export class RegionsCitiesListComponent implements regionsCitiesListInterface.IR
     protected activeService: ActivePanelService = inject(ActivePanelService);
     
     private _index: number = 0;
-
+    //[ ] TODO: Поправить значения, чтобы скролл вел себя нормально
     public ngAfterViewInit(): void {
         this.activeService.subscribe((index: number) => {
             console.log(index);

@@ -21,7 +21,7 @@ export class EventsPageComponent {
     public breadcrumbsItems: Array<{ caption: string, routerLink: string }> = [
         { caption: 'Главная', routerLink: '/home' },
         { caption: 'Города', routerLink:'/home/cities' },
-        { caption: 'Город', routerLink:'/home/cities/city' },
+        { caption: 'Город', routerLink:'/home/cities/:id' },
     ];
 
     public searchResultsCount: number = 0;
