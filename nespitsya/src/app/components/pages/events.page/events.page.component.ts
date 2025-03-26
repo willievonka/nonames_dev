@@ -9,7 +9,6 @@ import { ActivatedRoute, Params } from '@angular/router';
     imports: [
         CommonModule,
         TuiBreadcrumbsComponent,
-        
     ],
     templateUrl: './events.page.component.html',
     styleUrl: './events.page.component.scss',

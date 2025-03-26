@@ -34,9 +34,9 @@ export class CitiesPageComponent {
                 {
                     name: 'Московская область',
                     cities: [
-                        { name: 'Красногорск', routerLink: '' },
-                        { name: 'Химки', routerLink: '' },
-                        { name: 'Зеленоград', routerLink: '' }
+                        { id: 1, name: 'Красногорск' },
+                        { id: 2, name: 'Химки', },
+                        { id: 3, name: 'Зеленоград', }
                     ]
                 },
             ]
@@ -47,8 +47,8 @@ export class CitiesPageComponent {
                 {
                     name: 'Ленинградская область',
                     cities: [
-                        { name: 'Пушкин', routerLink: '' },
-                        { name: 'Петергоф', routerLink: '' }
+                        { id: 4, name: 'Пушкин', },
+                        { id: 5, name: 'Петергоф', }
                     ]
                 },
             ]
@@ -59,10 +59,10 @@ export class CitiesPageComponent {
                 {
                     name: 'Cвердловская область',
                     cities: [
-                        { name: 'Екатеринбург', routerLink: 'home/cities/yekaterinburg' },
-                        { name: 'Ревда', routerLink: '' },
-                        { name: 'Первоуральск', routerLink: '' },
-                        { name: 'Верхняя Пышма', routerLink: '' }
+                        { id: 6, name: 'Екатеринбург', },
+                        { id: 7, name: 'Ревда', },
+                        { id: 8, name: 'Первоуральск', },
+                        { id: 9, name: 'Верхняя Пышма', }
                     ]
                 },
             ]

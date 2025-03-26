@@ -13,6 +13,6 @@ export interface IRegion {
 }
 
 export interface ICity {
+    id: number;
     name: string;
-    routerLink: string;
 }

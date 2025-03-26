@@ -32,7 +32,7 @@ export class RegionsCitiesListComponent implements regionsCitiesListInterface.IR
         this.activeService.subscribe((index: number) => {
             if (this.name && this._index !== index) {
                 const targetElement: HTMLElement = this.name.toArray()[index].nativeElement;
-                const offset: number = targetElement.offsetTop - 97; // Смещение на 100px сверху
+                const offset: number = targetElement.offsetTop - 97; // Смещение на 97px сверху
                 window.scrollTo({ top: offset, behavior: 'smooth' });
                 this._index = index;
             }

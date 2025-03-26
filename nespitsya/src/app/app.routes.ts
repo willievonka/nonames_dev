@@ -10,7 +10,6 @@ export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomePageComponent },
     { path: 'home/cities', component: CitiesPageComponent },
-    //[ ] TODO: Сделать нормальную маршрутизацию по городам, например '/cities/yekaterinburg' и тд
     { path: 'home/cities/:id', component: EventsPageComponent },
     { path: 'home/feedback', component: FeedbackPageComponent },
 ];
