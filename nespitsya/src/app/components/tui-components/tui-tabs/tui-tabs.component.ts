@@ -19,14 +19,15 @@ export class TuiTabsComponent {
     public tabs: string[] = [];
 
     /**
-     *
+     * Gets the index of the currently active tab.
      */
     protected get activeItemIndex(): number {
         return this._activeItemIndex;
     }
     
     /**
-     *
+     * Sets the index of the currently active tab and updates the active panel service.
+     * @param value - The index of the active tab.
      */
     protected set activeItemIndex(value: number) {
         console.log(value, this.activeService.getIndex());

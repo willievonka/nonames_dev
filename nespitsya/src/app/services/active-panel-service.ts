@@ -13,15 +13,16 @@ export class ActivePanelService extends Observable<number> {
     }
 
     /**
-     *
+     * Gets the current active index.
+     * @returns The current active index as a number.
      */
     public getIndex(): number {
         return this.activeIndex.value;
-
     }
 
     /**
-     *
+     * Sets the active index to the specified value.
+     * @param index - The new active index as a number.
      */
     public setIndex(index: number): void {
         this.activeIndex.next(index);
