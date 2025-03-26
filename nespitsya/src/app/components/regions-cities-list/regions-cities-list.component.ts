@@ -24,28 +24,36 @@ export class RegionsCitiesListComponent implements regionsCitiesListInterface.IR
     public groups: regionsCitiesListInterface.IRegionsGroup[] = [];
 
     protected activeService: ActivePanelService = inject(ActivePanelService);
-    
+
     private _index: number = 0;
-    //[ ] TODO: Поправить значения, чтобы скролл вел себя нормально
+
     public ngAfterViewInit(): void {
+        // Подписка на изменение активного индекса
         this.activeService.subscribe((index: number) => {
-            console.log(index);
             if (this.name && this._index !== index) {
-                this.name.toArray()[index].nativeElement.scrollIntoView({ behavior: 'smooth' });
+                const targetElement: HTMLElement = this.name.toArray()[index].nativeElement;
+                const offset: number = targetElement.offsetTop - 97; // Смещение на 100px сверху
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                this._index = index;
             }
         });
 
+        // Обработчик события прокрутки
         document.addEventListener('scroll', () => {
             if (this.name) {
+                const scrollTop: number = window.scrollY || document.documentElement.scrollTop;
+
                 this.name.toArray().forEach((element: ElementRef, index: number) => {
                     const rect: DOMRect = element.nativeElement.getBoundingClientRect();
-                    if (rect.top < document.documentElement.scrollTop) {
-                        this._index = index;
-                        console.log(index);
-                        console.log(document.documentElement.scrollTop);
-                        this.activeService.setIndex(index);
+                    const elementTop: number = rect.top + scrollTop;
+                    const elementBottom: number = elementTop + rect.height;
 
-                        return;
+                    // Проверяем, находится ли элемент в видимой области
+                    if (scrollTop >= elementTop - 100 && scrollTop < elementBottom - 100) {
+                        if (this._index !== index) {
+                            this._index = index;
+                            this.activeService.setIndex(index);
+                        }
                     }
                 });
             }

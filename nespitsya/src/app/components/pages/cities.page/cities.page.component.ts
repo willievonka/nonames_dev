@@ -39,38 +39,6 @@ export class CitiesPageComponent {
                         { name: 'Зеленоград', routerLink: '' }
                     ]
                 },
-                {
-                    name: 'Московская область',
-                    cities: [
-                        { name: 'Красногорск', routerLink: '' },
-                        { name: 'Химки', routerLink: '' },
-                        { name: 'Зеленоград', routerLink: '' }
-                    ]
-                },
-                {
-                    name: 'Московская область',
-                    cities: [
-                        { name: 'Красногорск', routerLink: '' },
-                        { name: 'Химки', routerLink: '' },
-                        { name: 'Зеленоград', routerLink: '' }
-                    ]
-                },
-                {
-                    name: 'Московская область',
-                    cities: [
-                        { name: 'Красногорск', routerLink: '' },
-                        { name: 'Химки', routerLink: '' },
-                        { name: 'Зеленоград', routerLink: '' }
-                    ]
-                },
-                {
-                    name: 'Московская область',
-                    cities: [
-                        { name: 'Красногорск', routerLink: '' },
-                        { name: 'Химки', routerLink: '' },
-                        { name: 'Зеленоград', routerLink: '' }
-                    ]
-                },
             ]
         },
         {
