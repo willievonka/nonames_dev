@@ -2,7 +2,7 @@
     <app-tui-breadcrumbs [items]="breadcrumbsItems"></app-tui-breadcrumbs>
     <h1 class="home-page__title">
         Популярные<br>события в<br>
-        <span class="home-page__city-location">{{ cityLocation }}</span>
+        <span class="home-page__city-location">{{ cityLocation | cityDeclension }}</span>
     </h1>
     <div class="home-page__events-list">
         <app-tui-event-card 
@@ -21,7 +21,7 @@
     <app-tui-secondary-button
         class="home-page__more-events-button"
         size="l" 
-        [buttonText]="moreEventsButtonText" 
+        [buttonText]="moreEventsButtonText | cityDeclension" 
         [buttonIconRight]="moreEventsButtonIcon"
     >
     </app-tui-secondary-button>

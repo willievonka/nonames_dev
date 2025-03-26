@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Params } from '@angular/router';
+import { CityDeclensionPipe } from '../../../pipes/city-declension/city-declension.pipe';
 
 
 @Component({
@@ -9,6 +10,7 @@ import { ActivatedRoute, Params } from '@angular/router';
     imports: [
         CommonModule,
         TuiBreadcrumbsComponent,
+        CityDeclensionPipe,
     ],
     templateUrl: './events.page.component.html',
     styleUrl: './events.page.component.scss',

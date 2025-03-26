@@ -2,7 +2,7 @@
     <app-tui-breadcrumbs [items]="breadcrumbsItems"></app-tui-breadcrumbs>
     <h1 class="events-page__title">
         События в<br>
-        <span class="events-page__city-location">{{ cityName }}</span>
+        <span class="events-page__city-location">{{ cityName | cityDeclension }}</span>
     </h1>
     <div class="events-page__search-results" [ngPlural]="searchResultsCount">
         <ng-template ngPluralCase="=0">Нет результатов</ng-template>

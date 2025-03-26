@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tui-breadcrumbs.component';
 import { TuiEventCardComponent } from '../../tui-components/tui-event-card/tui-event-card.component';
 import { TuiSecondaryButtonComponent } from '../../tui-components/tui-secondary-button/tui-secondary-button.component';
+import { CityDeclensionPipe } from '../../../pipes/city-declension/city-declension.pipe';
 
 
 @Component({
@@ -12,13 +13,14 @@ import { TuiSecondaryButtonComponent } from '../../tui-components/tui-secondary-
         TuiBreadcrumbsComponent,
         TuiEventCardComponent,
         TuiSecondaryButtonComponent,
+        CityDeclensionPipe,
     ],
     templateUrl: './home.page.component.html',
     styleUrl: './home.page.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePageComponent {
-    public cityLocation: string = 'Екатеринбурге';
+    public cityLocation: string = 'Екатеринбург';
 
     public breadcrumbsItems: Array<{ caption: string, routerLink: string }> = [
         { caption: 'Главная', routerLink: '/home' },
