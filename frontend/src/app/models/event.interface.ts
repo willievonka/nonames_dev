@@ -1,4 +1,4 @@
-export interface IEventCard {
+export interface IEvent {
     image: string;
     title: string;
     place: string;
