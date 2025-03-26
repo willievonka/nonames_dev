@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TuiFlatButtonComponent } from '../tui-components/tui-flat-button/tui-flat-button.component';
+import { TuiFlatButtonComponent } from '../tui-components/tui-button/tui-flat-button/tui-flat-button.component';
 import { RouterLink } from '@angular/router';
 
 

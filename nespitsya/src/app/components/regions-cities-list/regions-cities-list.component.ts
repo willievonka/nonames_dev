@@ -1,5 +1,5 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, inject, Input, QueryList, ViewChildren } from '@angular/core';
-import { TuiSecondaryButtonComponent } from '../tui-components/tui-secondary-button/tui-secondary-button.component';
+import { TuiSecondaryButtonComponent } from '../tui-components/tui-button/tui-secondary-button/tui-secondary-button.component';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import * as regionsCitiesListInterface from './regions-cities-list.interface';
