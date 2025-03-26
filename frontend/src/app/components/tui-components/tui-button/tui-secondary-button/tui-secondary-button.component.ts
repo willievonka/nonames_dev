@@ -22,5 +22,4 @@ export class TuiSecondaryButtonComponent {
     public buttonIconRight: string = '';
     @Input()
     public size: 's' | 'm' | 'l' | 'xl' | 'xs' = 's';
-
 }

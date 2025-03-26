@@ -4,6 +4,8 @@ import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tu
 import { TuiEventCardComponent } from '../../tui-components/tui-event-card/tui-event-card.component';
 import { TuiSecondaryButtonComponent } from '../../tui-components/tui-button/tui-secondary-button/tui-secondary-button.component';
 import { CityDeclensionPipe } from '../../../pipes/city-declension/city-declension.pipe';
+import { RouterLink } from '@angular/router';
+import { ICity } from '../../regions-cities-list/regions-cities-list.interface';
 
 
 @Component({
@@ -14,13 +16,17 @@ import { CityDeclensionPipe } from '../../../pipes/city-declension/city-declensi
         TuiEventCardComponent,
         TuiSecondaryButtonComponent,
         CityDeclensionPipe,
+        RouterLink,
     ],
     templateUrl: './home.page.component.html',
     styleUrl: './home.page.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePageComponent {
-    public cityLocation: string = 'Екатеринбург';
+    public city: ICity = {
+        id: 6,
+        name: 'Екатеринбург',
+    };
 
     public breadcrumbsItems: Array<{ caption: string, routerLink: string }> = [
         { caption: 'Главная', routerLink: '/home' },
@@ -56,6 +62,6 @@ export class HomePageComponent {
         },
     ];
 
-    public moreEventsButtonText: string = `Больше событий в ${this.cityLocation}`;
+    public moreEventsButtonText: string = `Больше событий в ${this.city.name}`;
     public moreEventsButtonIcon: string = '@tui.corner-down-right';
 }
