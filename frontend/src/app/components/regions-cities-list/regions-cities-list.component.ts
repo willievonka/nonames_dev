@@ -3,7 +3,7 @@ import { TuiSecondaryButtonComponent } from '../tui-components/tui-button/tui-se
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import * as regionsCitiesListInterface from './regions-cities-list.interface';
-import { ActivePanelService } from '../../services/active-panel-service';
+import { ActivePanelService } from '../../services/active-panel.service';
 
 @Component({
     selector: 'app-regions-cities-list',
