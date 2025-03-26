@@ -48,9 +48,9 @@
 
 ### Запуск Frontend
 
-1. Перейдите в директорию `nespitsya`:
+1. Перейдите в директорию `frontend`:
    ```bash
-   cd nespitsya
+   cd frontend
    ```
 2. Установите зависимости:
    ```bash
