@@ -3,17 +3,17 @@ import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tu
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Params } from '@angular/router';
 import { CityDeclensionPipe } from '../../../pipes/city-declension/city-declension.pipe';
-import { TuiOutlineButtonComponent } from "../../tui-components/tui-button/tui-outline-button/tui-outline-button.component";
+import { TuiOutlineButtonComponent } from '../../tui-components/tui-button/tui-outline-button/tui-outline-button.component';
 
 
 @Component({
     selector: 'app-events.page',
     imports: [
-    CommonModule,
-    TuiBreadcrumbsComponent,
-    CityDeclensionPipe,
-    TuiOutlineButtonComponent
-],
+        CommonModule,
+        TuiBreadcrumbsComponent,
+        CityDeclensionPipe,
+        TuiOutlineButtonComponent
+    ],
     templateUrl: './events.page.component.html',
     styleUrl: './events.page.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
