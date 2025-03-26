@@ -12,14 +12,17 @@
       text-transform: uppercase;
   }
 
+  &__center-title {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    max-width: 452px;
+    gap: 11px;
+  }
+
   &__city-location {
       display: flex;
       color: rgb(255, 112, 67);
-  }
-
-  &__events-list {
-      display: flex;
-      gap: 10px;
   }
 
   &__event-card {
@@ -29,5 +32,8 @@
   &__search-results {
       font-family: Space Grotesk, sans-serif;
       font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+
   }
 }

@@ -3,15 +3,17 @@ import { TuiBreadcrumbsComponent } from '../../tui-components/tui-breadcrumbs/tu
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Params } from '@angular/router';
 import { CityDeclensionPipe } from '../../../pipes/city-declension/city-declension.pipe';
+import { TuiOutlineButtonComponent } from "../../tui-components/tui-button/tui-outline-button/tui-outline-button.component";
 
 
 @Component({
     selector: 'app-events.page',
     imports: [
-        CommonModule,
-        TuiBreadcrumbsComponent,
-        CityDeclensionPipe,
-    ],
+    CommonModule,
+    TuiBreadcrumbsComponent,
+    CityDeclensionPipe,
+    TuiOutlineButtonComponent
+],
     templateUrl: './events.page.component.html',
     styleUrl: './events.page.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -21,7 +23,7 @@ export class EventsPageComponent {
     public cityId: string = '';
 
     public activatedRoute: ActivatedRoute = inject(ActivatedRoute);
-    
+
     public searchResultsCount: number = 0;
 
     public breadcrumbsItems: Array<{ caption: string, routerLink: string }> = [];
