@@ -1,0 +1,38 @@
+.events-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  box-sizing: border-box;
+
+  &__title {
+      margin: 13px 0;
+      margin-bottom: 10px;
+      font-size: 52px;
+      line-height: 44px;
+      text-transform: uppercase;
+  }
+
+  &__center-title {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    max-width: 452px;
+    gap: 11px;
+  }
+
+  &__city-location {
+      display: flex;
+      color: rgb(255, 112, 67);
+  }
+
+  &__event-card {
+      width: 316px;
+  }
+
+  &__search-results {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 300;
+  }
+}

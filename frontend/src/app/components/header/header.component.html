@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="header__left-part">
+    <a>
+      <img 
+        class="header__logo" 
+        src="logo.svg" 
+        alt="logo" 
+        routerLink=""
+      >
+    </a>
+    <div class="header__nav">
+      <app-tui-input-search class="header__input-search"></app-tui-input-search>
+      <app-tui-dropdown 
+        class="header__dropdown" 
+        [dropdownIcon]="dropdownIcon"
+      >
+      </app-tui-dropdown>
+    </div>
+  </div>
+  <app-tui-accent-button 
+    class="header__login-button" 
+    [buttonIcon]="loginButtonIcon" 
+    [buttonText]="loginButtonText"
+  >
+  </app-tui-accent-button>
+</div>
